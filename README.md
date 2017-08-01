@@ -1,6 +1,7 @@
-# dragons-vuejs
-
-> Client builded using VueJS to consumes a API 
+<div align="center">
+    <img  width="100" src="http://www.vuejs-brasil.com.br/content/images/2016/06/logo.png"/>
+</div>
+<h1>A sample TODO List builded using VueJS</h1>
 
 ## Build Setup
 
@@ -13,15 +14,4 @@ npm run dev
 
 # build for production with minification
 npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
