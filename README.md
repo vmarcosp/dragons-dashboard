@@ -1,7 +1,9 @@
 # Dragons Dashboard
 A dashboard for <a href="https://dragons-api.herokuapp.com/">Dragons API</a>, created by <a href="https://github.com/wbruno/dragons-api">wbruno</a>.
-[![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/wbruno/dragons-api/blob/master/LICENSE)
 
+<br>
+
+[![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/vmarcosp/dragons-dashboard/blob/master/LICENSE)
 ## Build Setup
 
 ``` bash
