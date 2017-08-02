@@ -1,7 +1,5 @@
-<div align="center">
-    <img  width="100" src="http://www.vuejs-brasil.com.br/content/images/2016/06/logo.png"/>
-</div>
-<h1>A client to consumes <a href="https://dragons-api.herokuapp.com/">Dragons API</a>, created by <a href="https://github.com/wbruno/dragons-api">wbruno</a>  </h1>
+<h1>Dragons Dashboard</h1>
+<h2>A dashboard for <a href="https://dragons-api.herokuapp.com/">Dragons API</a>, created by <a href="https://github.com/wbruno/dragons-api">wbruno</a>  </h2>
 
 ## Build Setup
 
