@@ -22,4 +22,7 @@ export default {
 * {
   font-family: 'Ubuntu', sans-serif;
 }
+html,body,#app{
+  height: 100%;
+}
 </style>
