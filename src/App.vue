@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <sidebar>
-
+  
     </sidebar>
   </div>
 </template>
@@ -18,5 +18,8 @@ export default {
 </script>
 
 <style>
-
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
 </style>
