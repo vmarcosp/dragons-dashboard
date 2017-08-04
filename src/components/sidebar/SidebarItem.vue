@@ -20,6 +20,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/scss/utils/_variables';
+
 li {
     display: flex;
     align-items: center;

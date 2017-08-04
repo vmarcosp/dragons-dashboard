@@ -24,10 +24,11 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/scss/utils/_variables';
+@import '../../assets/scss/utils/_functions';
 
 aside {
     min-height: 100%;
     background: $black;
-    max-width: 350px;
+    max-width: calculateRem(300px);
 }
 </style>
