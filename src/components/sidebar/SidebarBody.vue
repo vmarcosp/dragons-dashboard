@@ -1,7 +1,7 @@
 <template>
     <div class="body">
         <ul>
-            <sidebar-item v-for="(item,index) in items" :key="index" :label="item.label"></sidebar-item>
+            <sidebar-item v-for="(item,index) in items" :key="index" :icon="item.icon" :label="item.label"></sidebar-item>
         </ul>
     </div>
 </template>
@@ -18,11 +18,11 @@ export default {
         return {
             items: [
                 {
-                    icon: 'nome-icone',
+                    icon: 'list',
                     label: 'Cadastrar'
                 },
                 {
-                    icon: 'nome-icone',
+                    icon: 'list',
                     label: 'Editar'
                 }
             ]
@@ -33,13 +33,14 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/scss/utils/_variables';
+@import '../../assets/scss/utils/_functions';
 
 .body {
-    border-top: solid .2rem $black-dark;
-    >ul{
+    border-top: solid calculateRem(1px) $black-dark;
+    >ul {
         list-style: none;
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
     }
 }
 </style>
