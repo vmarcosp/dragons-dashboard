@@ -18,14 +18,19 @@ export default {
         return {
             items: [
                 {
-                    icon: 'list',
-                    label: 'Cadastrar',
-                    route: '/teste'
+                    icon: 'home',
+                    label: 'Home',
+                    route: '/home'
                 },
                 {
-                    icon: 'list',
-                    label: 'Editar',
-                    route: '/testando'
+                    icon: 'plus-square-o',
+                    label: 'Register new dragon',
+                    route: '/register-dragon'
+                },
+                {
+                    icon: 'list-alt',
+                    label: 'View all dragons',
+                    route: '/all-dragons'
                 }
             ]
         };
@@ -38,7 +43,7 @@ export default {
 @import '../../assets/scss/utils/_functions';
 
 .body {
-    border-top: solid calculateRem(1px) $black-dark;
+    margin-top: 3rem;
     >ul {
         list-style: none;
         margin: 0;
