@@ -1,7 +1,7 @@
 <template>
     <div class="body">
         <ul>
-            <sidebar-item v-for="(item,index) in items" :key="index" :icon="item.icon" :label="item.label"></sidebar-item>
+            <sidebar-item v-for="(item,index) in items" :route="item.route" :key="index" :icon="item.icon" :label="item.label"></sidebar-item>
         </ul>
     </div>
 </template>
@@ -19,11 +19,13 @@ export default {
             items: [
                 {
                     icon: 'list',
-                    label: 'Cadastrar'
+                    label: 'Cadastrar',
+                    route: '/teste'
                 },
                 {
                     icon: 'list',
-                    label: 'Editar'
+                    label: 'Editar',
+                    route: '/testando'
                 }
             ]
         };

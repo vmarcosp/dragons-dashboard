@@ -1,12 +1,10 @@
 <template>
-    <li>
+    <router-link tag="li" :to="routeTo" exact>
         <span class="icon">
             <icon :value="icon"></icon>
         </span>
-        <span class="label">{{label}}
-    
-        </span>
-    </li>
+        <span class="label">{{label}}</span>
+    </router-link>
 </template>
 
 <script>
@@ -24,6 +22,15 @@ export default {
         icon: {
             required: true,
             type: String
+        },
+        route: {
+            required: true,
+            type: String
+        }
+    },
+    computed: {
+        routeTo() {
+            return { path: this.route };
         }
     }
 };
@@ -34,6 +41,7 @@ export default {
 @import '../../assets/scss/utils/_mixins';
 
 li {
+    cursor: pointer;
     display: flex;
     align-items: center;
     padding: 1.4rem;
@@ -44,7 +52,14 @@ li {
     >.icon {
         @include fontSize(18px);
         color: $gray;
-        margin-right:1rem;
+        margin-right: 1rem;
+    }
+    &.router-link-exact-active {
+        background: $black-dark;
+        border-right: solid calculateRem(4px) $primary;
+        >.icon {
+            color: $primary;
+        }
     }
 }
 </style>
