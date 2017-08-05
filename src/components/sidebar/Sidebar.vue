@@ -1,27 +1,14 @@
 <template>
     <aside>
-        <sidebar-header>
-            <logo></logo>
-        </sidebar-header>
-        <sidebar-body></sidebar-body>
-        <sidebar-footer></sidebar-footer>
+        <slot name="header"></slot>
+        <slot name="body"></slot>
+        <slot name="footer"></slot>
     </aside>
 </template>
 
 <script>
-import SidebarHeader from './SidebarHeader';
-import SidebarBody from './SidebarBody';
-import SidebarFooter from './SidebarFooter';
-import Logo from './Logo';
-
 export default {
-    name: 'sidebar',
-    components: {
-        SidebarHeader,
-        Logo,
-        SidebarBody,
-        SidebarFooter
-    }
+    name: 'sidebar'
 };
 </script>
 
@@ -35,11 +22,5 @@ aside {
     min-height: 100%;
     background: $black;
     max-width: calculateRem(300px);
-    .body{
-        flex-grow: 1;
-    }
-    .footer {
-        padding: 1rem;
-    }
 }
 </style>

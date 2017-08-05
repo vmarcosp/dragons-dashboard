@@ -43,7 +43,8 @@ export default {
 @import '../../assets/scss/utils/_functions';
 
 .body {
-    margin-top: 3rem;
+    margin-top: 2.5rem;
+    flex-grow: 1;
     >ul {
         list-style: none;
         margin: 0;

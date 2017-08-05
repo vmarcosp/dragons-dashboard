@@ -1,18 +1,16 @@
 <template>
   <div id="app">
-    <sidebar>
-  
-    </sidebar>
+  <dashboard-sidebar></dashboard-sidebar>
   </div>
 </template>
 
 <script>
-import Sidebar from './components/sidebar/Sidebar';
+import DashboardSidebar from './components/dashboard-sidebar/DashboardSidebar';
 
 export default {
   name: 'app',
   components: {
-    Sidebar
+    DashboardSidebar
   }
 };
 </script>
@@ -24,9 +22,11 @@ export default {
   font-family: 'Ubuntu', sans-serif;
 }
 
-html,body,#app{
+html,
+body,
+#app {
   height: 100%;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 </style>
