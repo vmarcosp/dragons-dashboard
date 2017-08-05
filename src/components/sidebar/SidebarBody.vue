@@ -1,40 +1,12 @@
 <template>
     <div class="body">
-        <ul>
-            <sidebar-item v-for="(item,index) in items" :route="item.route" :key="index" :icon="item.icon" :label="item.label"></sidebar-item>
-        </ul>
+        <slot></slot>
     </div>
 </template>
 
 <script>
-import SidebarItem from './SidebarItem';
-
 export default {
-    name: 'sidebar-body',
-    components: {
-        SidebarItem
-    },
-    data() {
-        return {
-            items: [
-                {
-                    icon: 'home',
-                    label: 'Home',
-                    route: '/home'
-                },
-                {
-                    icon: 'plus-square-o',
-                    label: 'Register new dragon',
-                    route: '/register-dragon'
-                },
-                {
-                    icon: 'list-alt',
-                    label: 'View all dragons',
-                    route: '/all-dragons'
-                }
-            ]
-        };
-    }
+    name: 'sidebar-body'
 };
 </script>
 
@@ -45,10 +17,5 @@ export default {
 .body {
     margin-top: 2.5rem;
     flex-grow: 1;
-    >ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
 }
 </style>
