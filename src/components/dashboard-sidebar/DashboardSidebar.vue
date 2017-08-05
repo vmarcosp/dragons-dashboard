@@ -9,7 +9,9 @@
             </ul>
         </sidebar-body>
         <sidebar-footer slot="footer">
-    
+            <div class="social-footer">
+                <icon-social route="https://github.com/vmarcosp/dragons-dashboard" classIcon="github"></icon-social>
+            </div>
         </sidebar-footer>
     </sidebar>
 </template>
@@ -17,15 +19,20 @@
 <script>
 import { Sidebar, SidebarHeader, SidebarBody, SidebarItem, SidebarFooter } from '../sidebar';
 import Logo from './Logo';
+import IconSocial from './IconSocial';
+import Icon from '../icon/Icon';
+
 export default {
     name: 'dashboard-sidebar',
     components: {
         Logo,
         Sidebar,
+        Icon,
         SidebarHeader,
         SidebarBody,
         SidebarItem,
-        SidebarFooter
+        SidebarFooter,
+        IconSocial
     },
     data() {
         return {
@@ -51,7 +58,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 ul {
     list-style: none;
     margin: 0;
