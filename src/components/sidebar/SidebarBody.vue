@@ -43,7 +43,7 @@ export default {
 @import '../../assets/scss/utils/_functions';
 
 .body {
-    // margin-top: 3rem;
+    margin-top: 3rem;
     >ul {
         list-style: none;
         margin: 0;

@@ -31,15 +31,15 @@ export default {
 
 aside {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     min-height: 100%;
     background: $black;
     max-width: calculateRem(300px);
-    .header,
-    .body,
+    .body{
+        flex-grow: 1;
+    }
     .footer {
-        border:solid 1px red;
-        flex: 1 100%;
+        padding: 1rem;
     }
 }
 </style>

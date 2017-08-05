@@ -14,4 +14,7 @@ export default {
 @import '../../assets/scss/utils/_variables';
 @import '../../assets/scss/utils/_functions';
 
+.footer {
+    border-top: solid calculateRem(1px) $black-dark;
+}
 </style>
