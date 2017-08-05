@@ -4,7 +4,7 @@
             <logo></logo>
         </sidebar-header>
         <sidebar-body></sidebar-body>
-        <!-- <sidebar-footer></sidebar-footer> -->
+        <sidebar-footer></sidebar-footer>
     </aside>
 </template>
 
@@ -30,14 +30,16 @@ export default {
 @import '../../assets/scss/utils/_functions';
 
 aside {
+    display: flex;
+    flex-wrap: wrap;
     min-height: 100%;
-    flex-flow: row wrap;
     background: $black;
     max-width: calculateRem(300px);
-    // .header,
-    // .body,
-    // .footer {
-    //     flex: 1 100%;
-    // }
+    .header,
+    .body,
+    .footer {
+        border:solid 1px red;
+        flex: 1 100%;
+    }
 }
 </style>
