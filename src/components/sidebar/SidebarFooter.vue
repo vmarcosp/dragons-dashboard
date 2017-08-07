@@ -11,8 +11,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/utils/_variables';
-@import '../../assets/scss/utils/_functions';
+@import '~@scss/utils/_functions';
+@import '~@scss/utils/_variables';
 
 .footer {
     border-top: solid calculateRem(1px) $black-dark;

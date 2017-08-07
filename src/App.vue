@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-  <dashboard-sidebar></dashboard-sidebar>
+    <dashboard-sidebar></dashboard-sidebar>
   </div>
 </template>
 
 <script>
-import DashboardSidebar from './components/dashboard-sidebar/DashboardSidebar';
+import DashboardSidebar from '@/components/dashboard-sidebar/DashboardSidebar';
 
 export default {
   name: 'app',

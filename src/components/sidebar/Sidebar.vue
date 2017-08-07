@@ -13,8 +13,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/utils/_variables';
-@import '../../assets/scss/utils/_functions';
+@import '~@scss/utils/_variables';
 
 aside {
     display: flex;

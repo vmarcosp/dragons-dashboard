@@ -12,7 +12,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/utils/_variables';
+@import '~@scss/utils/_variables';
 
 .container-logo {
     padding: 0;

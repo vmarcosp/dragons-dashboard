@@ -17,10 +17,10 @@
 </template>
 
 <script>
-import { Sidebar, SidebarHeader, SidebarBody, SidebarItem, SidebarFooter } from '../sidebar';
+import { Sidebar, SidebarHeader, SidebarBody, SidebarItem, SidebarFooter } from '@/components/sidebar';
 import Logo from './Logo';
 import IconSocial from './IconSocial';
-import Icon from '../icon/Icon';
+import Icon from '@/components/icon/Icon';
 
 export default {
     name: 'dashboard-sidebar',
@@ -40,7 +40,7 @@ export default {
                 {
                     icon: 'home',
                     label: 'Home',
-                    route: '/home'
+                    route: '/'
                 },
                 {
                     icon: 'plus-square-o',

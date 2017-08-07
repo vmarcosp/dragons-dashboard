@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Icon from '../icon/Icon';
+import Icon from '@/components/icon/Icon';
 
 export default {
     name: 'icon-social',
@@ -26,8 +26,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/utils/_variables';
-@import '../../assets/scss/utils/_mixins';
+@import '~@scss/utils/_mixins';
+@import '~@scss/utils/_variables';
+
 .icon-social {
     @include fontSize(35px);
     color: $black-dark;

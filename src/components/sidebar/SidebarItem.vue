@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Icon from '../icon/Icon';
+import Icon from '@/components/icon/Icon';
 export default {
     name: 'sidebar-item',
     components: {
@@ -37,8 +37,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/utils/_variables';
-@import '../../assets/scss/utils/_mixins';
+@import '~@scss/utils/_variables';
+@import '~@scss/utils/_mixins';
+
 
 li {
     cursor: pointer;

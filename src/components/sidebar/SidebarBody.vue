@@ -11,8 +11,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/utils/_variables';
-@import '../../assets/scss/utils/_functions';
 
 .body {
     margin-top: 2.5rem;
