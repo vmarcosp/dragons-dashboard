@@ -13,6 +13,7 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs"
   },
   "dependencies": {
+    "bourbon": "^4.3.4",
     "font-awesome": "^4.7.0",
     "normalize.css": "^7.0.0",
     "vue": "^2.3.3",
