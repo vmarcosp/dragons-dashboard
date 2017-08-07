@@ -1,6 +1,0 @@
-{
-    "eslint.enable": true,
-    "eslint.options": {
-        "configFile": "/home/vmarcosp/Documentos/Fontes/Pratices/VueJS/dragons-vuejs/.eslintrc.json"
-    }
-}
