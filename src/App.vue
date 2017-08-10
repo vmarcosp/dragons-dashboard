@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <dashboard-sidebar></dashboard-sidebar>
+    <div>MAIN</div>
   </div>
 </template>
 
@@ -25,6 +26,7 @@ export default {
 html,
 body,
 #app {
+  display: flex;
   height: 100%;
   padding: 0;
   margin: 0;

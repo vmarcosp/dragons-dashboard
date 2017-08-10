@@ -18,14 +18,10 @@ export default {
     padding: 0;
     margin: 0;
     list-style: none;
-    -ms-box-orient: horizontal;
     display: flex;
     text-align: center;
-    -webkit-justify-content: space-around;
     justify-content: space-around;
-    -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
-    -webkit-align-items: stretch;
     align-items: stretch;
     span {
         width: 100%;

@@ -32,5 +32,9 @@ export default {
 .icon-social {
     @include fontSize(35px);
     color: $black-dark;
+    &:hover{
+        color:$blue;
+        @include transition(200ms ease-in-out);
+    }
 }
 </style>

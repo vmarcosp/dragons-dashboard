@@ -9,8 +9,9 @@
             </ul>
         </sidebar-body>
         <sidebar-footer slot="footer">
-            <div class="social-footer">
+            <div class="icons-container">
                 <icon-social route="https://github.com/vmarcosp/dragons-dashboard" classIcon="github"></icon-social>
+                <icon-social route="https://codepen.io/vmarcosp" classIcon="codepen"></icon-social>
             </div>
         </sidebar-footer>
     </sidebar>
@@ -63,5 +64,13 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+    a {
+        margin: .5rem;
+    }
 }
 </style>

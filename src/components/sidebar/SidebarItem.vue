@@ -46,6 +46,7 @@ li {
     display: flex;
     align-items: center;
     padding: 1.4rem;
+    @include transition(all 200ms);
     >.label {
         @include fontSize(16px);
         color: $gray;
