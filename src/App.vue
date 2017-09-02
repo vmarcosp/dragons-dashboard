@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <dashboard-sidebar></dashboard-sidebar>
-    <div>MAIN</div>
+    <div class="app-main">
+    </div>
   </div>
 </template>
 
 <script>
 import DashboardSidebar from '@/components/dashboard-sidebar/DashboardSidebar';
+import InputField from '@/components/inputs/InputField';
 
 export default {
   name: 'app',
   components: {
-    DashboardSidebar
+    DashboardSidebar,
+    InputField
   }
 };
 </script>
@@ -30,5 +33,9 @@ body,
   height: 100%;
   padding: 0;
   margin: 0;
+}
+
+.app-main{
+  display: flex;
 }
 </style>
