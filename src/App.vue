@@ -2,20 +2,23 @@
   <div id="app">
     <dashboard-sidebar></dashboard-sidebar>
     <div class="app-main">
-      <router-view></router-view>
+      <navbar></navbar>
+      <div class="view-container">
+        <router-view></router-view>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import DashboardSidebar from '@/components/dashboard-sidebar/DashboardSidebar';
-import InputField from '@/components/inputs/InputField';
+import Navbar from '@/components/navbar/Navbar';
 
 export default {
   name: 'app',
   components: {
     DashboardSidebar,
-    InputField
+    Navbar
   }
 };
 </script>
@@ -23,6 +26,7 @@ export default {
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import '~@scss/utils/_variables';
+@import '~@scss/utils/_functions';
 
 * {
   font-family: 'Ubuntu', sans-serif;
@@ -46,5 +50,9 @@ body,
   width: 100%;
   background: $gray-light;
   display: flex;
+  flex-flow: column wrap;
+  >.view-container{
+    padding:calculateRem(25px) calculateRem(36px);
+  }
 }
 </style>
