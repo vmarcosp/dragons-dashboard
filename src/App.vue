@@ -2,6 +2,7 @@
   <div id="app">
     <dashboard-sidebar></dashboard-sidebar>
     <div class="app-main">
+      <router-view></router-view>
     </div>
   </div>
 </template>
@@ -21,6 +22,7 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import '~@scss/utils/_variables';
 
 * {
   font-family: 'Ubuntu', sans-serif;
@@ -29,13 +31,20 @@ export default {
 html,
 body,
 #app {
-  display: flex;
   height: 100%;
   padding: 0;
   margin: 0;
 }
 
-.app-main{
+#app {
+  display: flex;
+  flex-direction: row;
+}
+
+.app-main {
+  overflow: auto;
+  width: 100%;
+  background: $gray-light;
   display: flex;
 }
 </style>

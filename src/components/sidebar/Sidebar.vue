@@ -20,5 +20,6 @@ aside {
     flex-flow: column wrap;
     min-height: 100%;
     background: $black;
+    width:300px;
 }
 </style>
