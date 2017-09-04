@@ -2,7 +2,7 @@
   <div id="app">
     <dashboard-sidebar></dashboard-sidebar>
     <div class="app-main">
-      <navbar></navbar>
+      <!-- <navbar></navbar>   -->
       <div class="view-container">
         <router-view></router-view>
       </div>

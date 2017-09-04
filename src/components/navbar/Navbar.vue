@@ -14,6 +14,6 @@ export default {
   width: 100%;
   background: #fff;
   height: 5rem;
-  border: solid 1px rgba(197, 208, 225, 0.4);
+  border-bottom: solid 1px rgba(197, 208, 225, 0.4);
 }
 </style>
