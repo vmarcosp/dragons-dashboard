@@ -1,7 +1,8 @@
 <template>
-  <table class="table">
-    <slot></slot>
-  </table>
+  <div class="table">
+    <slot name="header"></slot>
+    <slot name="body"></slot>
+  </div>
 </template>
 
 <script>
@@ -14,10 +15,12 @@ export default {
 
 .table {
   width: 100%;
+  border-spacing: 0;
   background: white;
   border: {
     top: dashed 1.5px $gray;
     bottom: dashed 1.5px $gray;
+    right: dashed 1.5px $gray;
   }
 }
 </style>
