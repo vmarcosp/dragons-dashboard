@@ -4,10 +4,10 @@
     <data-table>
       <table-header slot="header" :items="items" />
       <table-body slot="body">
-        <table-row v-for="dragon in dragons" :key="dragon">
+        <table-row v-for="dragon in dragons" :key="dragon._id">
           <table-data>{{dragon.name}}</table-data>
           <table-data>{{dragon.type}}</table-data>
-          <table-data>{{dragon.created_at}}</table-data>
+          <table-data>{{dragon.created_at | dateFormat }}</table-data>
           <table-data>{{dragon.slug}}</table-data>
           <table-data>EDIT | DELETE</table-data>
         </table-row>
@@ -35,14 +35,17 @@ export default {
   created() {
     axios.get(ENDPOINTS.ALL_DRAGONS)
       .then((response) => {
-        this.dragons = response.data.items;
         this.$store.commit('setAllDragons', response.data.items);
       })
       .catch(console.log);
   },
+  computed: {
+    dragons() {
+      return this.$store.state.allDragons;
+    }
+  },
   data() {
     return {
-      dragons: [],
       items: [
         'NAME',
         'TYPE',

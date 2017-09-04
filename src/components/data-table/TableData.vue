@@ -20,6 +20,5 @@ export default {
   flex-basis: 0;
   flex-grow: 1;
   padding: calculateRem(10px) calculateRem(20px);
-  border-bottom: dashed 1.5px $gray;
 }
 </style>
