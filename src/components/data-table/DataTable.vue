@@ -19,7 +19,6 @@ export default {
   background: white;
   border: {
     top: dashed 1.5px $gray;
-    bottom: dashed 1.5px $gray;
     right: dashed 1.5px $gray;
   }
 }

@@ -2,4 +2,13 @@ import Vuex from 'vuex';
 import Vue from 'vue';
 Vue.use(Vuex);
 
-export default new Vuex.Store({});
+export default new Vuex.Store({
+  state: {
+    allDragons: []
+  },
+  mutations: {
+    setAllDragons(state, dragons) {
+      state.allDragons = dragons;
+    }
+  }
+});
